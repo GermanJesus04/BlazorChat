@@ -43,7 +43,7 @@ app.UseRouting();
 
 app.MapRazorPages();
 app.MapControllers();
-//agregamos lo que seria el endpoint
+//agregamos lo que seria el mapeo entre servidor y cliente
 app.MapHub<ChatHub>("/chathub");
 app.MapFallbackToFile("index.html");
 
